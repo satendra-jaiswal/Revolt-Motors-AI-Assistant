@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk to Rev</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+    <img src="revolt_logo.svg" alt="Revolt Logo">
+</div>
+        <div class="theme-switch-container">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>
+    </header>
+
+    <main class="chat-container">
+        <div class="intro-text">
+            <img src="Rev.gif" alt="Rev Bot Icon" class="bot-icon">
+            <h1>Talk to Rev</h1>
+        </div>
+        
+        <div id="status"></div>
+        <div id="transcript"></div>
+        
+       <button id="talkButton">
+    <svg class="mic-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z"/></svg>
+    <svg class="stop-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6 6h12v12H6z"/></svg>
+</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,186 @@
+/* This reset removes default browser margins and ensures full screen coverage */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Prevents unwanted scrollbars */
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.4s, color 0.4s;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.chat-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+.intro-text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.bot-icon {
+    width: 80px;
+    height: 80px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+
+#status, #transcript {
+    min-height: 24px;
+    font-size: 1.1rem;
+    color: #a0a0a0;
+}
+
+#talkButton {
+    background-color: #007bff;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+}
+
+#talkButton:hover {
+    background-color: #0056b3;
+}
+
+#talkButton.listening {
+    background-color: #F44336; /* A standard red color */
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.5);
+}
+
+.mic-icon {
+    color: white;
+}
+
+/* --- Theme Switch Styles --- */
+.theme-switch-container {
+    display: flex;
+    align-items: center;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 28px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #555;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #007bff;
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* --- Light Mode Theme --- */
+body.light-mode {
+    background-color: #ffffff;
+    color: #121212;
+}
+
+body.light-mode header {
+    color: #121212;
+}
+
+body.light-mode #status,
+body.light-mode #transcript {
+    color: #555;
+}
+
+/* Default style for the logo image (makes it appear white for Dark Mode) */
+.logo img {
+    height: 18px;
+    display: block;
+    filter: invert(1); /* This inverts the color (black becomes white) */
+}
+
+/* Style for the logo image when in Light Mode */
+body.light-mode .logo img {
+    filter: none; /* This removes the filter, showing the original black logo */
+}
+
+/* Icon Visibility Control */
+.stop-icon {
+    display: none;
+    color: #ffffff; /* This forces the icon to be white */
+}
+
+#talkButton.listening .mic-icon {
+    display: none; /* Hide the mic icon when listening */
+}
+
+#talkButton.listening .stop-icon {
+    display: block; /* Show the stop icon when listening */
+}
