@@ -1,4 +1,3 @@
-````markdown
 # Real-Time Conversational AI Assistant
 
 This repository contains the source code for a **real-time, full-stack voice assistant** built with **Google Gemini API** and **Node.js**.  
@@ -51,7 +50,7 @@ Follow these steps to run the project locally:
 ```bash
 git clone https://github.com/your-username/your-repository-name.git
 cd your-repository-name
-````
+
 
 ### 3. Install Dependencies
 
