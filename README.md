@@ -122,7 +122,4 @@ Contributions are welcome! Please fork the repo, create a branch, and open a pul
 * [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
 * Inspiration: Revolt Motors AI Chatbot
 
-```
 
-Do you want me to also **add usage instructions** (like how to talk to the bot, start/stop recording, etc.) so new users know how to interact with it?
-```
