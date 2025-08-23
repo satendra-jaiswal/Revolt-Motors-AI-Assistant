@@ -1,31 +1,129 @@
+
+````
 # Real-Time Conversational AI Assistant
 
-This repository contains the source code for a full-stack, real-time voice assistant built with the Google Gemini API and Node.js. The application replicates the core functionality of the Revolt Motors chatbot, featuring continuous voice recognition, automatic language detection (English/Hindi), and a dynamic, theme-switching UI.
+This repository contains the source code for a **real-time, full-stack voice assistant** built with **Google Gemini API** and **Node.js**.  
+The assistant replicates the functionality of the Revolt Motors chatbot, featuring continuous voice recognition, **automatic language detection (English/Hindi/Hinglish)**, and a sleek **theme-switching UI** for a seamless user experience.
 
-![AI Health Assistant](https://i.imgur.com/your-image-url.png)
+![AI Assistant Demo](https://i.imgur.com/your-image-url.png)
 
-## Features
+---
 
--   **Real-Time Voice Interface**: A low-latency, continuous voice chat experience using the Web Speech API for natural conversation and seamless interruption handling.
--   **Intelligent Language Detection**: The AI automatically detects whether the user is speaking English, Hindi, or Hinglish and responds in the same language.
--   **Dynamic UI/UX**: A clean, responsive, single-page application with a persistent dark/light theme switcher and custom-styled, state-aware components.
--   **Robust Backend**: A secure server-to-server architecture using Node.js and Express to manage interactions with the Google Gemini API, ensuring API keys and core logic are protected.
--   **Advanced State Management**: Custom logic to handle browser-specific bugs and race conditions, ensuring a stable and reliable user experience.
--   **AI Safety Protocols**: The system instructions are designed to enforce disclaimers and prevent the AI from giving medical advice, ensuring a safe user interaction for the healthcare context.
+## 🚀 Features
 
-## Technologies Used
+- **🎙 Real-Time Voice Interface**  
+  Low-latency, continuous voice chat using the **Web Speech API** for natural conversations with smooth interruption handling.  
 
--   **Backend**: Node.js, Express.js
--   **AI**: Google Gemini API (`gemini-1.5-flash-latest`)
--   **Frontend**: JavaScript, HTML, CSS
--   **APIs**: Web Speech API (SpeechRecognition & SpeechSynthesis)
+- **🗣 Intelligent Language Detection**  
+  Detects **English, Hindi, and Hinglish** automatically and responds in the same language.  
 
-## Setup and Installation
+- **🎨 Dynamic UI/UX**  
+  A clean, responsive single-page application with a **dark/light theme switcher** and modern, styled components.  
 
-Follow these steps to run the project locally.
+- **🛡 Robust Backend**  
+  Server-to-server architecture with **Node.js + Express**, securely handling API calls to Google Gemini while keeping API keys safe.  
 
-### Prerequisites
+- **⚡ Advanced State Management**  
+  Custom logic to handle browser quirks and race conditions, ensuring stability and reliability.  
 
--   Node.js (v18 or later)
--   A Google Gemini API Key
+- **✅ AI Safety Protocols**  
+  System instructions prevent unsafe medical advice and ensure clear disclaimers for healthcare-related interactions.  
 
+---
+
+## 🛠️ Technologies Used
+
+- **Backend**: Node.js, Express.js  
+- **AI Model**: Google Gemini API (`gemini-1.5-flash-latest`)  
+- **Frontend**: JavaScript, HTML, CSS  
+- **APIs**: Web Speech API (`SpeechRecognition` & `SpeechSynthesis`)  
+
+---
+
+## ⚙️ Setup and Installation
+
+Follow these steps to run the project locally:
+
+### 1. Prerequisites
+- [Node.js](https://nodejs.org/) (v18 or later)  
+- A valid **Google Gemini API Key** (get one from [aistudio.google.com](https://aistudio.google.com))  
+
+### 2. Clone the Repository
+```bash
+git clone https://github.com/your-username/your-repository-name.git
+cd your-repository-name
+````
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Set Up Environment Variables
+
+Create a `.env` file in the project root and add your Gemini API key:
+
+```
+GEMINI_API_KEY="YOUR_API_KEY_HERE"
+```
+
+### 5. Run the Server
+
+```bash
+npm start
+```
+
+The app will be available at:
+👉 `http://localhost:3000`
+
+Open it in a modern browser (Google Chrome recommended) that supports the **Web Speech API**.
+
+---
+
+## 📂 Project Structure
+
+```
+├── public/
+│   ├── index.html        # Frontend layout
+│   ├── style.css         # Styling for UI
+│   ├── script.js         # Core frontend logic
+│   ├── Rev.gif           # Bot animation/icon
+│   └── revolt-logo.svg   # App/brand logo
+├── .env                  # Environment variables (not committed)
+├── package.json          # Dependencies & scripts
+└── server.js             # Express server & Gemini API integration
+```
+
+---
+
+## ⚡ Future Improvements
+
+* Add support for **more Indian regional languages**
+* Integrate **speech-to-text fallback** for browsers without Web Speech API support
+* Enable **contextual conversation memory** with Gemini
+* Deploy on **Vercel/Render/Heroku** for cloud access
+
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License** – feel free to use, modify, and distribute with attribution.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please fork the repo, create a branch, and open a pull request.
+
+---
+
+## 🙌 Acknowledgements
+
+* [Google Gemini API](https://aistudio.google.com)
+* [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
+* Inspiration: Revolt Motors AI Chatbot
+
+```
+
+```
