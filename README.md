@@ -1,5 +1,4 @@
-
-````
+````markdown
 # Real-Time Conversational AI Assistant
 
 This repository contains the source code for a **real-time, full-stack voice assistant** built with **Google Gemini API** and **Node.js**.  
@@ -126,4 +125,5 @@ Contributions are welcome! Please fork the repo, create a branch, and open a pul
 
 ```
 
+Do you want me to also **add usage instructions** (like how to talk to the bot, start/stop recording, etc.) so new users know how to interact with it?
 ```
