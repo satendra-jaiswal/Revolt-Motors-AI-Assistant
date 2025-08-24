@@ -32,7 +32,7 @@ The assistant replicates the functionality of the Revolt Motors chatbot, featuri
 ## 🛠️ Technologies Used
 
 - **Backend**: Node.js, Express.js  
-- **AI Model**: Google Gemini API (`gemini-1.5-flash-latest`)  
+- **AI Model**: Google Gemini API (`gemini-2.0-flash-lite`)  
 - **Frontend**: JavaScript, HTML, CSS  
 - **APIs**: Web Speech API (`SpeechRecognition` & `SpeechSynthesis`)  
 
