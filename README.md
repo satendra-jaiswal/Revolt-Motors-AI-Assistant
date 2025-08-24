@@ -1,4 +1,4 @@
-# Real-Time Conversational AI Assistant
+# Revolt-Motors-AI-Assistant
 
 This repository contains the source code for a **real-time, full-stack voice assistant** built with **Google Gemini API** and **Node.js**.  
 The assistant replicates the functionality of the Revolt Motors chatbot, featuring continuous voice recognition, **automatic language detection (English/Hindi/Hinglish)**, and a sleek **theme-switching UI** for a seamless user experience.
