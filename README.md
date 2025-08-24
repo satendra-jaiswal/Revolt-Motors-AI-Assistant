@@ -3,7 +3,7 @@
 This repository contains the source code for a **real-time, full-stack voice assistant** built with **Google Gemini API** and **Node.js**.  
 The assistant replicates the functionality of the Revolt Motors chatbot, featuring continuous voice recognition, **automatic language detection (English/Hindi/Hinglish)**, and a sleek **theme-switching UI** for a seamless user experience.
 
-![AI Assistant Demo](https://i.imgur.com/your-image-url.png)
+![AI Assistant Demo](https://live.revoltmotors.com/images/Rev.gif)
 
 ---
 
@@ -48,9 +48,9 @@ Follow these steps to run the project locally:
 
 ### 2. Clone the Repository
 ```bash
-git clone https://github.com/your-username/your-repository-name.git
-cd your-repository-name
-
+git clone https://github.com/satendra-jaiswal/RevoltMotors-AI-Assistant.git
+cd RevoltMotors-AI-Assistant
+```
 
 ### 3. Install Dependencies
 
